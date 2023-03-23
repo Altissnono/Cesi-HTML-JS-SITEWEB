@@ -1,0 +1,83 @@
+/* Style général */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Couleurs */
+:root {
+  --primary-color: #00a8ff; /* bleu clair */
+  --secondary-color: #353b48; /* gris foncé */
+  --tertiary-color: #f5f6fa; /* blanc cassé */
+}
+
+/* Police de caractères */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* En-tête */
+header {
+  background-color: var(--secondary-color);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px; /* augmenter le padding pour agrandir le menu */
+}
+nav ul li a:hover {
+  background-color: var(--primary-color);
+}
+/* Ajoutez vos styles ici */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display:inline-block ;
+   border :1px solid #ccc ;
+   box-sizing:border-box ;
+}
+
+button {
+   background-color :#4CAF50 ;
+   color :white ;
+   padding :14px 20px ;
+   margin :8px 0 ;
+   border :none ;
+   cursor:pointer ;
+}
+
+button:hover {
+   opacity :0.8 ;
+}
+
+.container {
+   padding :16px ;
+}
