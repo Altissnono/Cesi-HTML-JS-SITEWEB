@@ -1,3 +1,3 @@
 # Cesi-Site-html-js
  Code Cesi pour faire un site en HTML et JS
-code pas jolie du tout !
+# Code pas jolie du tout !
