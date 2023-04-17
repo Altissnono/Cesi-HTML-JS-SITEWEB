@@ -85,16 +85,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.php">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Connexion</a>
+                            <a class="nav-link" href="login.php">Connexion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="scription.html">Inscription</a>
+                            <a class="nav-link" href="scription.php">Inscription</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="user.html">information</a>
+                            <a class="nav-link" href="user.php">information</a>
                           </li>
                           </ul>
                         
@@ -104,7 +104,7 @@
               </header>
               <br><br>
                         <div class="container">
-                            <form onsubmit="return validateForm()">
+                        <form action="signup.php" method="POST">
                                 <div class="mb-3">
                                   <label for="username" class="form-label"><b>Nom d'utilisateur</b></label>
                                   <input type="text" class="form-control" placeholder="Entrez votre nom d'utilisateur" name="username" required oninput="checkUsername()">
@@ -212,7 +212,7 @@
                                 // all inputs are valid
                                 sessionStorage.setItem("username", usernameInput.value);
                                 sessionStorage.setItem("id", 100);
-                                window.location.href = "login.html";
+                                window.location.href = "login.php";
                                 return true;
                             } else {
                                 console.error("La redirection a échoué");

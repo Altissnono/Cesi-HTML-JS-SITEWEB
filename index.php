@@ -28,11 +28,11 @@
         <a class="navbar-brand" href="#">Ma page d'accueil</a>
       </div>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.html">Connexion</a></li>
-        <li><a href="inscription.html">Inscription</a></li>
+        <li><a href="contact.php">Contact</a></li>
+        <li><a href="login.php">Connexion</a></li>
+        <li><a href="inscription.php">Inscription</a></li>
         <li class="nav-item">
-          <a class="nav-link" href="user.html">information</a>
+          <a class="nav-link" href="user.php">information</a>
         </li>
       </ul>
     </div>
