@@ -18,8 +18,7 @@ $confirm_password = $_POST["confirm-password"];
 
 // Vérifier si les mots de passe correspondent
 if ($password !== $confirm_password) {
-    echo "Les mots de passe ne correspondent pas.";
-    exit();
+    showErrorAndRedirect("Les mots de passe ne correspondent pas.");
 }
 
 // Hasher le mot de passe
@@ -34,12 +33,20 @@ $result = $stmt->execute();
 if ($result) {
     echo "Inscription réussie.";
     // Rediriger vers la page de connexion
-    header("Location: login.php");
+    header("Location: user.php");
 } else {
-    echo "Erreur lors de l'inscription: " . $conn->error;
+    showErrorAndRedirect("Erreur lors de l'inscription: " . $conn->error);
 }
 
 // Fermer la connexion
 $stmt->close();
 $conn->close();
+
+function showErrorAndRedirect($message) {
+    echo "<script>";
+    echo "alert('" . addslashes($message) . "');";
+    echo "window.location.href='scription.php';";
+    echo "</script>";
+    exit();
+}
 ?>

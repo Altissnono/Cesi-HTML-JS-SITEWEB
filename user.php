@@ -94,14 +94,13 @@ if (!isset($_SESSION['userId'])) {
                 <a class="nav-link" href="contact.php">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.php">Connexion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="scription.php">Inscription</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="user.php">Information</a>
               </li>
+              <?php if($_SESSION['userId'] == 3) { ?>
+                <li class="nav-item">
+                  <a class="nav-link" href="admin.php">Admin</a>
+                </li>
+              <?php } ?>
               <li class="nav-item">
                 <a class="nav-link" href="logout.php">Déconnexion</a>
               </li>
