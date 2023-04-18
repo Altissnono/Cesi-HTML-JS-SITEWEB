@@ -1,48 +1,63 @@
 <!DOCTYPE html>
-<?php require_once 'config.php'; ?>
-<html>
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cesi</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <title>Ma page d'accueil</title>
+  <!-- Inclusion des fichiers CSS et JS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Styles personnalisés pour la page -->
   <style>
     body {
-      background-color: #1c1c1c;
-      color: white;
-      text-align: center;
+      background-color: #22324c;
+      color: #fff;
+    }
+    .shadow-text {
+      text-shadow: 2px 2px #333;
+    }
+    .shadow-box {
+      box-shadow: 2px 2px 10px #333;
     }
   </style>
 </head>
 <body>
-<div id="contentWrapper" style="height: 100vh; width: 100vw;">
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.php">Cesi</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="contact.php">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.php">Connexion</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="scription.php">Inscription</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="user.php">Information</a>
-            </li>
-          </ul>
-        </div>
+  <!-- Ajout d'un en-tête avec une barre de navigation Bootstrap -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Ma page d'accueil</a>
       </div>
-    </nav>
-  </header>
-  <br><br>
-</div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="contact.php">Contact</a></li>
+        <li><a href="login.php">Connexion</a></li>
+        <li><a href="inscription.php">Inscription</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="user.php">information</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <!-- Ajout d'un titre principal avec un effet d'ombre -->
+        <h1 class="shadow-text">Bienvenue sur ma page d'accueil</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <!-- Ajout d'un paragraphe avec un effet d'ombre et une boîte d'ombre -->
+        <p class="text-justify shadow-text shadow-box">Dans un avenir proche, la technologie a envahi notre monde. Les rues sont plongées dans l'obscurité, éclairées uniquement par les néons des publicités et les lueurs des implants cybernétiques. Vous êtes un(e) hacker, un(e) renégat(e) de la société, cherchant à se frayer un chemin dans cet environnement hostile. La guerre est partout, les ennemis sont nombreux. Êtes-vous prêt(e) à tout pour survivre ?</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ajout d'un pied de page Bootstrap -->
+  <footer class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+      <p class="navbar-text navbar-right">Tous droits réservés © Ma page d'accueil 2023</p>
+    </div>
+  </footer>
 </body>
 </html>
